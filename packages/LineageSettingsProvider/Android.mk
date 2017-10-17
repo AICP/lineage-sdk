@@ -30,6 +30,11 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_STATIC_JAVA_LIBRARIES := \
     org.lineageos.platform.internal
 
+ifndef LOCAL_JACK_ENABLED
+LOCAL_PROGUARD_ENABLED := disabled
+LOCAL_DX_FLAGS := --multi-dex
+endif
+
 include $(BUILD_PACKAGE)
 
 ########################
