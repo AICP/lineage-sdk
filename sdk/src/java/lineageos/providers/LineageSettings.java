@@ -1271,6 +1271,16 @@ public final class LineageSettings {
                 sColorValidator;
 
         /**
+         * Whether to enable the pixel navbar animation
+         * @hide
+         */
+        public static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
+
+        /** @hide */
+        public static final Validator PIXEL_NAV_ANIMATION_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Sprint MWI Quirk: Show message wait indicator notifications
          * @hide
          */
@@ -2056,6 +2066,7 @@ public final class LineageSettings {
                 LineageSettings.System.ZEN_ALLOW_LIGHTS,
                 LineageSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK,
                 LineageSettings.System.ACCELEROMETER_ROTATION_ANGLES,
+                LineageSettings.System.PIXEL_NAV_ANIMATION,
         };
 
         /**
@@ -2233,6 +2244,7 @@ public final class LineageSettings {
                     ACCELEROMETER_ROTATION_ANGLES_VALIDATOR);
             VALIDATORS.put(__MAGICAL_TEST_PASSING_ENABLER,
                     __MAGICAL_TEST_PASSING_ENABLER_VALIDATOR);
+            VALIDATORS.put(PIXEL_NAV_ANIMATION, PIXEL_NAV_ANIMATION_VALIDATOR);
         };
         // endregion
     }
