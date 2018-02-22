@@ -27,8 +27,11 @@ import android.database.ContentObserver;
 import android.os.BatteryManager;
 import android.os.Handler;
 import android.os.UserHandle;
+import android.provider.Settings;
 import android.provider.Settings.Global;
 import android.util.Slog;
+
+import com.android.internal.util.aicp.AicpUtils;
 
 import lineageos.providers.LineageSettings;
 
@@ -50,6 +53,8 @@ public final class LineageBatteryLights {
     private int mBatteryLowARGB;
     private int mBatteryMediumARGB;
     private int mBatteryFullARGB;
+    private boolean mBatteryBlendColors;
+    private boolean mBatteryBlendColorsReverse;
     private int mBatteryBrightness;
     private int mBatteryBrightnessZen;
 
@@ -131,7 +136,14 @@ public final class LineageBatteryLights {
         if (low) {
             if (status == BatteryManager.BATTERY_STATUS_CHARGING) {
                 // Battery is charging and low.
-                ledValues.setColor(mBatteryLowARGB);
+                if (mBatteryBlendColors) {
+                    ledValues.setColor(
+                            AicpUtils.getBlendColorForPercent(mBatteryFullARGB,
+                                    mBatteryLowARGB, mBatteryBlendColorsReverse, level)
+                    );
+                } else {
+                    ledValues.setColor(mBatteryLowARGB);
+                }
                 ledValues.setSolid();
             } else if (mLedPulseEnabled) {
                 // Battery is low, not charging and pulse is enabled
@@ -140,7 +152,13 @@ public final class LineageBatteryLights {
             }
         } else if (status == BatteryManager.BATTERY_STATUS_CHARGING
                 || status == BatteryManager.BATTERY_STATUS_FULL) {
-            if (status == BatteryManager.BATTERY_STATUS_FULL || level >= 90) {
+            if (mBatteryBlendColors) {
+                ledValues.setColor(
+                        AicpUtils.getBlendColorForPercent(mBatteryFullARGB,
+                                mBatteryLowARGB, mBatteryBlendColorsReverse, level)
+                );
+                ledValues.setSolid();
+            } else if (status == BatteryManager.BATTERY_STATUS_FULL || level >= 90) {
                 // Battery is full or charging and nearly full.
                 ledValues.setColor(mBatteryFullARGB);
                 ledValues.setSolid();
@@ -208,6 +226,13 @@ public final class LineageBatteryLights {
                 resolver.registerContentObserver(LineageSettings.System.getUriFor(
                         LineageSettings.System.BATTERY_LIGHT_BRIGHTNESS_LEVEL_ZEN), false, this,
                         UserHandle.USER_ALL);
+                // Battery blend
+                resolver.registerContentObserver(Settings.System.getUriFor(
+                        Settings.System.BATTERY_LIGHT_BLEND_COLOR), false, this,
+                        UserHandle.USER_ALL);
+                resolver.registerContentObserver(Settings.System.getUriFor(
+                        Settings.System.BATTERY_LIGHT_BLEND_COLOR_REVERSE), false, this,
+                        UserHandle.USER_ALL);
             }
 
             update();
@@ -240,6 +265,12 @@ public final class LineageBatteryLights {
             mBatteryFullARGB = LineageSettings.System.getInt(resolver,
                     LineageSettings.System.BATTERY_LIGHT_FULL_COLOR, res.getInteger(
                     com.android.internal.R.integer.config_notificationsBatteryFullARGB));
+
+            // Blend colors
+            mBatteryBlendColors = Settings.System.getInt(resolver,
+                    Settings.System.BATTERY_LIGHT_BLEND_COLOR, 0) != 0;
+            mBatteryBlendColorsReverse = Settings.System.getInt(resolver,
+                    Settings.System.BATTERY_LIGHT_BLEND_COLOR_REVERSE, 0) != 0;
 
             if (mMultiColorLed) {
                 // Battery brightness level
