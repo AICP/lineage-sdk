@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "39d65cfb_cd97f095",
+        "filename": "lineage/res/res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 683
+      },
+      "writtenOn": "2018-03-21T15:50:32Z",
+      "side": 1,
+      "message": "alphabetically ;)",
+      "range": {
+        "startLine": 174,
+        "startChar": 4,
+        "endLine": 174,
+        "endChar": 44
+      },
+      "revId": "0bfa63ad65963c74b5d202e63902c94dde79f37c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": false
+    }
+  ]
+}
