@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,7 +44,7 @@ public final class LineageBatteryLights {
 
     // Battery light capabilities.
     private final boolean mHasBatteryLed;
-    private final boolean mMultiColorLed;
+    private final boolean mMultiColorBatteryLed;
     // Whether the lights HAL supports changing brightness.
     private final boolean mHALAdjustableBrightness;
     // Whether the light should be considered brightness adjustable
@@ -60,8 +60,8 @@ public final class LineageBatteryLights {
     private int mBatteryFullARGB;
     private boolean mBatteryBlendColors;
     private boolean mBatteryBlendColorsReverse;
-    private int mBatteryBrightness;
-    private int mBatteryBrightnessZen;
+    private int mBatteryBrightnessLevel;
+    private int mBatteryBrightnessZenLevel;
 
     private final Context mContext;
 
@@ -77,12 +77,12 @@ public final class LineageBatteryLights {
         mContext = context;
         mLedUpdater = ledUpdater;
 
-        // Does the device have a battery LED ?
+        // Does the device have a battery LED?
         mHasBatteryLed = LightsCapabilities.supports(
                 mContext, LightsCapabilities.LIGHTS_BATTERY_LED);
 
         // Does the device support changing battery LED colors?
-        mMultiColorLed = LightsCapabilities.supports(
+        mMultiColorBatteryLed = LightsCapabilities.supports(
                 mContext, LightsCapabilities.LIGHTS_RGB_BATTERY_LED);
 
         mHALAdjustableBrightness = LightsCapabilities.supports(
@@ -90,7 +90,7 @@ public final class LineageBatteryLights {
 
         // We support brightness adjustment if either the HAL supports it
         // or the light is RGB adjustable.
-        mCanAdjustBrightness = mHALAdjustableBrightness || mMultiColorLed;
+        mCanAdjustBrightness = mHALAdjustableBrightness || mMultiColorBatteryLed;
 
         // Does the device have segmented battery LED support? In this case, we send the level
         // in the alpha channel of the color and let the HAL sort it out.
@@ -120,9 +120,21 @@ public final class LineageBatteryLights {
 
     public void calcLights(LedValues ledValues, int level, int status, boolean low) {
         if (DEBUG) {
-            Slog.i(TAG, "calcLights input: ledValues={ " + ledValues + " } level="
-                    + level + " status=" + status + " low=" + low);
+            Slog.i(TAG, "calcLights input:"
+                    + " ledValues={ " + ledValues + " }"
+                    + " level=" + level
+                    + " status=" + status
+                    + " low=" + low
+                    + " mCanAdjustBrightness=" + mCanAdjustBrightness
+                    + " mHALAdjustableBrightness=" + mHALAdjustableBrightness
+                    + " mMultiColorBatteryLed=" + mMultiColorBatteryLed
+                    + " mUseSegmentedBatteryLed=" + mUseSegmentedBatteryLed
+                    + " mBatteryBrightnessLevel=" + mBatteryBrightnessLevel
+                    + " mBatteryBrightnessZenLevel=" + mBatteryBrightnessZenLevel
+                    + " mZenMode=" + mZenMode
+            );
         }
+
         // The only meaningful ledValues values received by frameworks BatteryService
         // are the pulse times (for low battery). Explicitly set enabled state and
         // color to ensure that we arrive at a deterministic outcome.
@@ -140,9 +152,9 @@ public final class LineageBatteryLights {
         } else if (mUseSegmentedBatteryLed) {
             brightness = level;
         } else if (mZenMode == Global.ZEN_MODE_OFF) {
-            brightness = mBatteryBrightness;
+            brightness = mBatteryBrightnessLevel;
         } else {
-            brightness = mBatteryBrightnessZen;
+            brightness = mBatteryBrightnessZenLevel;
         }
         ledValues.setBrightness(brightness);
 
@@ -221,7 +233,7 @@ public final class LineageBatteryLights {
                     LineageSettings.System.BATTERY_LIGHT_PULSE), false, this,
                 UserHandle.USER_ALL);
 
-            if (mMultiColorLed) {
+            if (mMultiColorBatteryLed) {
                 // Light colors
                 resolver.registerContentObserver(LineageSettings.System.getUriFor(
                         LineageSettings.System.BATTERY_LIGHT_LOW_COLOR), false, this,
@@ -289,13 +301,14 @@ public final class LineageBatteryLights {
             mBatteryBlendColorsReverse = Settings.System.getInt(resolver,
                     Settings.System.BATTERY_LIGHT_BLEND_COLOR_REVERSE, 0) != 0;
 
+            // Adustable battery LED brightness.
             if (mCanAdjustBrightness) {
                 // Battery brightness level
-                mBatteryBrightness = LineageSettings.System.getInt(resolver,
+                mBatteryBrightnessLevel = LineageSettings.System.getInt(resolver,
                         LineageSettings.System.BATTERY_LIGHT_BRIGHTNESS_LEVEL,
                         LedValues.LIGHT_BRIGHTNESS_MAXIMUM);
                 // Battery brightness level in Do Not Disturb mode
-                mBatteryBrightnessZen = LineageSettings.System.getInt(resolver,
+                mBatteryBrightnessZenLevel = LineageSettings.System.getInt(resolver,
                         LineageSettings.System.BATTERY_LIGHT_BRIGHTNESS_LEVEL_ZEN,
                         LedValues.LIGHT_BRIGHTNESS_MAXIMUM);
             }
