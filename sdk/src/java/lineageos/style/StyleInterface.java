@@ -67,6 +67,7 @@ public class StyleInterface {
      * Global style: black
      *
      * @see #setGlobalStyle
+     * @hide
      */
     public static final int STYLE_GLOBAL_BLACK = 4;
 

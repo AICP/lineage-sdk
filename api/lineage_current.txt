@@ -335,6 +335,7 @@ package lineageos.os {
     field public static final int FIG = 6; // 0x6
     field public static final int GUAVA = 7; // 0x7
     field public static final int HACKBERRY = 8; // 0x8
+    field public static final int ILAMA = 9; // 0x9
   }
 
   public final class Concierge {
@@ -402,10 +403,6 @@ package lineageos.platform {
 
   public static final class R.bool {
     ctor public R.bool();
-  }
-
-  public static final class R.dimen {
-    ctor public R.dimen();
   }
 
   public static final class R.drawable {
@@ -805,7 +802,6 @@ package lineageos.providers {
     field public static final java.lang.String BERRY_GLOBAL_STYLE = "berry_global_style";
     field public static final java.lang.String BERRY_MANAGED_BY_APP = "berry_managed_by_app";
     field public static final java.lang.String BLUETOOTH_ACCEPT_ALL_FILES = "bluetooth_accept_all_files";
-    field public static final java.lang.String BUTTON_BACKLIGHT_ONLY_WHEN_PRESSED = "button_backlight_only_when_pressed";
     field public static final java.lang.String CALL_RECORDING_FORMAT = "call_recording_format";
     field public static final java.lang.String CAMERA_LAUNCH = "camera_launch";
     field public static final java.lang.String CAMERA_SLEEP_ON_RELEASE = "camera_sleep_on_release";
