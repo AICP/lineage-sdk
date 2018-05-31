@@ -143,6 +143,7 @@
     <java-symbol type="string" name="accent_black" />
     <java-symbol type="string" name="accent_brown" />
     <java-symbol type="string" name="accent_cyan" />
+    <java-symbol type="string" name="accent_denim" />
     <java-symbol type="string" name="accent_green" />
     <java-symbol type="string" name="accent_grey" />
     <java-symbol type="string" name="accent_orange" />
