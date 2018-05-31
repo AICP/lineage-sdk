@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d62b6a97_6dde4619",
+        "filename": "lineage/res/res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 167,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2018-05-31T14:05:10Z",
+      "side": 1,
+      "message": "Should be accent_denim not accent_gold",
+      "range": {
+        "startLine": 167,
+        "startChar": 18,
+        "endLine": 167,
+        "endChar": 29
+      },
+      "revId": "95f0e63957fb54c9485a7e3e41de37f2dea7c1be",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": false
+    }
+  ]
+}
