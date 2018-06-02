@@ -139,15 +139,4 @@
   <string name="megabitspersecond_short">Mb/δ</string>
   <string name="kilobytespersecond_short">kB/δ</string>
   <string name="megabytespersecond_short">MB/δ</string>
-  <!-- Accent colors -->
-  <string name="accent_black">Άνθρακας</string>
-  <string name="accent_blue">Μύρτιλο</string>
-  <string name="accent_brown">Κακάο</string>
-  <string name="accent_cyan">Κυανό</string>
-  <string name="accent_green">Δάσος</string>
-  <string name="accent_orange">Κολοκύθα</string>
-  <string name="accent_pink">Κεράσι</string>
-  <string name="accent_purple">Λεβάντα</string>
-  <string name="accent_red">Ντομάτα</string>
-  <string name="accent_yellow">Μπανάνα</string>
 </resources>

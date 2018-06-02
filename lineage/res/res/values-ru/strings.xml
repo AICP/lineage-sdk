@@ -138,15 +138,4 @@
   <string name="megabitspersecond_short">Мбит/с</string>
   <string name="kilobytespersecond_short">кБ/с</string>
   <string name="megabytespersecond_short">МБ/с</string>
-  <!-- Accent colors -->
-  <string name="accent_black">Карбон</string>
-  <string name="accent_blue">Голубика</string>
-  <string name="accent_brown">Какао</string>
-  <string name="accent_cyan">Бирюза</string>
-  <string name="accent_green">Лес</string>
-  <string name="accent_orange">Тыква</string>
-  <string name="accent_pink">Вишня</string>
-  <string name="accent_purple">Лаванда</string>
-  <string name="accent_red">Помидор</string>
-  <string name="accent_yellow">Банан</string>
 </resources>

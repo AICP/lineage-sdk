@@ -138,15 +138,4 @@
   <string name="megabitspersecond_short">Mb/s</string>
   <string name="kilobytespersecond_short">ko/s</string>
   <string name="megabytespersecond_short">Mo/s</string>
-  <!-- Accent colors -->
-  <string name="accent_black">Carbone</string>
-  <string name="accent_blue">Myrtille</string>
-  <string name="accent_brown">Cacao</string>
-  <string name="accent_cyan">Cyan</string>
-  <string name="accent_green">Forêt</string>
-  <string name="accent_orange">Citrouille</string>
-  <string name="accent_pink">Cerise</string>
-  <string name="accent_purple">Lavande</string>
-  <string name="accent_red">Tomate</string>
-  <string name="accent_yellow">Banane</string>
 </resources>

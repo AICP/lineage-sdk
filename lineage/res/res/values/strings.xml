@@ -158,21 +158,4 @@
 
     <!-- Long-press back kill application -->
     <string name="app_killed_message">Application killed</string>
-
-    <!-- Accent colors -->
-    <string name="accent_amber">Amber</string>
-    <string name="accent_black">Black</string>
-    <string name="accent_brown">Brown</string>
-    <string name="accent_cyan">Cyan</string>
-    <string name="accent_denim">Denim</string>
-    <string name="accent_gold">Gold</string>
-    <string name="accent_green">Green</string>
-    <string name="accent_grey">Grey</string>
-    <string name="accent_lava">Lava</string>
-    <string name="accent_orange">Orange</string>
-    <string name="accent_pink">Pink</string>
-    <string name="accent_purple">Purple</string>
-    <string name="accent_red">Red</string>
-    <string name="accent_teal">Teal</string>
-    <string name="accent_yellow">Yellow</string>
 </resources>
