@@ -117,8 +117,10 @@
   <string name="permdesc_manageRemotePrefs">リモートの設定を管理することをアプリに許可します。</string>
   <!-- About device screen, build date -->
   <!-- About device screen, LineageOS API Level -->
+  <string name="lineage_api_level">LineageOS API レベル</string>
   <!-- About device screen, LineageOS updates -->
   <!-- About device screen, LineageOS version -->
+  <string name="lineage_version">LineageOS バージョン</string>
   <!-- General purpose use "unknown" string -->
   <!-- Long-press back kill application -->
   <!-- Status bar network traffic monitor strings -->
