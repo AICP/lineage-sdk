@@ -174,5 +174,6 @@
     <string name="accent_purple">Purple</string>
     <string name="accent_red">Red</string>
     <string name="accent_teal">Teal</string>
+    <string name="accent_turquoise">Turquoise</string>
     <string name="accent_yellow">Yellow</string>
 </resources>
