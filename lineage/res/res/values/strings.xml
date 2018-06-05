@@ -161,6 +161,7 @@
 
     <!-- Accent colors -->
     <string name="accent_amber">Amber</string>
+    <string name="accent_aqua">Aqua</string>
     <string name="accent_black">Black</string>
     <string name="accent_brown">Brown</string>
     <string name="accent_cyan">Cyan</string>
