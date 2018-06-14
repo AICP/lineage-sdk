@@ -72,6 +72,7 @@ public class StyleInterfaceService extends LineageSystemService {
     public void onStart() {
         mPackageManager = mContext.getPackageManager();
         mOverlayService = IOverlayManager.Stub.asInterface(ServiceManager.getService("overlay"));
+        Log.i("SCSCSC", "Lineage ovleray manager stuff started: " + mOverlayService);
     }
 
     private void enforceChangeStylePermission() {
@@ -108,6 +109,13 @@ public class StyleInterfaceService extends LineageSystemService {
 
         // Disable current accent
         String currentAccent = getAccentInternal();
+
+
+        if (mOverlayService == null) {
+            mOverlayService =
+                    IOverlayManager.Stub.asInterface(ServiceManager.getService("overlay"));
+            Log.i("SCSCSC", "Lineage ovleray manager stuff fixed: " + mOverlayService);
+        }
 
         try {
             mOverlayService.setEnabled(currentAccent, false, userId);
