@@ -109,6 +109,12 @@ public class StyleInterfaceService extends LineageSystemService {
         // Disable current accent
         String currentAccent = getAccentInternal();
 
+
+        if (mOverlayService == null) {
+            mOverlayService =
+                    IOverlayManager.Stub.asInterface(ServiceManager.getService("overlay"));
+        }
+
         try {
             mOverlayService.setEnabled(currentAccent, false, userId);
         } catch (Exception e) {
