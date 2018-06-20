@@ -17,4 +17,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Accent colors -->
+  <string name="accent_amber">Jantarová</string>
+  <string name="accent_black">Černá</string>
+  <string name="accent_brown">Hnědá</string>
+  <string name="accent_cyan">Tyrkysová</string>
+  <string name="accent_denim">Džínová</string>
+  <string name="accent_gold">Zlatá</string>
+  <string name="accent_green">Zelená</string>
+  <string name="accent_grey">Šedá</string>
+  <string name="accent_lava">Láva</string>
+  <string name="accent_orange">Oranžová</string>
+  <string name="accent_pink">Růžová</string>
+  <string name="accent_purple">Fialová</string>
+  <string name="accent_red">Červená</string>
+  <string name="accent_teal">Modrozelená</string>
+  <string name="accent_turquoise">Tyrkysová</string>
+  <string name="accent_yellow">Žlutá</string>
 </resources>

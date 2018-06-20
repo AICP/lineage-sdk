@@ -17,4 +17,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Accent colors -->
+  <string name="accent_amber">Amber</string>
+  <string name="accent_black">Zwart</string>
+  <string name="accent_brown">Bruin</string>
+  <string name="accent_cyan">Cyaan</string>
+  <string name="accent_denim">Denim</string>
+  <string name="accent_gold">Goud</string>
+  <string name="accent_green">Groen</string>
+  <string name="accent_grey">Grijs</string>
+  <string name="accent_lava">Lava</string>
+  <string name="accent_orange">Oranje</string>
+  <string name="accent_pink">Roze</string>
+  <string name="accent_purple">Paars</string>
+  <string name="accent_red">Rood</string>
+  <string name="accent_teal">Groenblauw</string>
+  <string name="accent_turquoise">Turkoois</string>
+  <string name="accent_yellow">Geel</string>
 </resources>
