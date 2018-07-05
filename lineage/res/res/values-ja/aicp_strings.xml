@@ -21,15 +21,14 @@
   <string name="accent_black">黒色</string>
   <string name="accent_brown">茶色</string>
   <string name="accent_cyan">水色</string>
+  <string name="accent_demon">デーモン</string>
   <string name="accent_denim">藍色</string>
   <string name="accent_gold">金色</string>
   <string name="accent_green">緑色</string>
   <string name="accent_grey">灰色</string>
-  <string name="accent_lava">濃い赤色</string>
   <string name="accent_orange">オレンジ色</string>
   <string name="accent_pink">ピンク色</string>
   <string name="accent_purple">紫色</string>
-  <string name="accent_red">赤色</string>
   <string name="accent_teal">青緑色</string>
   <string name="accent_turquoise">明るい水色</string>
   <string name="accent_yellow">黄色</string>

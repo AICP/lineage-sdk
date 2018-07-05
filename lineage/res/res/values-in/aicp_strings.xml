@@ -17,20 +17,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Accent colors -->
-  <string name="accent_amber">Amber</string>
+  <string name="accent_amber">Kuning kecoklatan</string>
   <string name="accent_black">Hitam</string>
-  <string name="accent_brown">Cokelat</string>
-  <string name="accent_cyan">Cyan</string>
-  <string name="accent_denim">Denim</string>
+  <string name="accent_brown">Coklat</string>
+  <string name="accent_cyan">Biru muda</string>
+  <string name="accent_demon">Merah</string>
+  <string name="accent_denim">Biru tua</string>
   <string name="accent_gold">Emas</string>
   <string name="accent_green">Hijau</string>
   <string name="accent_grey">Abu-abu</string>
-  <string name="accent_lava">Lahar</string>
   <string name="accent_orange">Oranye</string>
   <string name="accent_pink">Merah muda</string>
   <string name="accent_purple">Ungu</string>
-  <string name="accent_red">Merah</string>
-  <string name="accent_teal">Hijau kebiruan</string>
-  <string name="accent_turquoise">Turquoise</string>
+  <string name="accent_teal">Hijau lumut</string>
+  <string name="accent_turquoise">Biru langit</string>
   <string name="accent_yellow">Kuning</string>
 </resources>

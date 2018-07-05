@@ -17,4 +17,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Accent colors -->
+  <string name="accent_gold">골드</string>
+  <string name="accent_yellow">노랑색</string>
 </resources>

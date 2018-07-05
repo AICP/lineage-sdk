@@ -21,15 +21,14 @@
   <string name="accent_black">Nero</string>
   <string name="accent_brown">Marrone</string>
   <string name="accent_cyan">Ciano</string>
+  <string name="accent_demon">Demone</string>
   <string name="accent_denim">Denim</string>
   <string name="accent_gold">Oro</string>
   <string name="accent_green">Verde</string>
   <string name="accent_grey">Grigio</string>
-  <string name="accent_lava">Lava</string>
   <string name="accent_orange">Arancione</string>
   <string name="accent_pink">Rosa</string>
   <string name="accent_purple">Viola</string>
-  <string name="accent_red">Rosso</string>
   <string name="accent_teal">Verde acqua</string>
   <string name="accent_turquoise">Turchese</string>
   <string name="accent_yellow">Giallo</string>
