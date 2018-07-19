@@ -149,6 +149,7 @@
     <java-symbol type="string" name="accent_green" />
     <java-symbol type="string" name="accent_grey" />
     <java-symbol type="string" name="accent_orange" />
+    <java-symbol type="string" name="accent_oxygen" />
     <java-symbol type="string" name="accent_pink" />
     <java-symbol type="string" name="accent_purple" />
     <java-symbol type="string" name="accent_teal" />
