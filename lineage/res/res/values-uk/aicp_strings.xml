@@ -17,4 +17,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Accent colors -->
+  <string name="accent_amber">Бурштиновий</string>
+  <string name="accent_black">Чорний</string>
+  <string name="accent_brown">Коричневий</string>
+  <string name="accent_cyan">Блакитний</string>
+  <string name="accent_demon">Демон</string>
+  <string name="accent_denim">Джинсовий</string>
+  <string name="accent_gold">Золотий</string>
+  <string name="accent_green">Зелений</string>
+  <string name="accent_grey">Сірий</string>
+  <string name="accent_orange">Помаранчевий</string>
+  <string name="accent_oxygen">Кисневий</string>
+  <string name="accent_pink">Рожевий</string>
+  <string name="accent_purple">Фіолетовий</string>
+  <string name="accent_teal">Морський</string>
+  <string name="accent_turquoise">Бірюзовий</string>
+  <string name="accent_yellow">Жовтий</string>
 </resources>

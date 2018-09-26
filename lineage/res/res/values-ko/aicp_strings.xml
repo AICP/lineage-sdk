@@ -17,6 +17,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Accent colors -->
+  <string name="accent_amber">황색</string>
+  <string name="accent_black">검은색</string>
+  <string name="accent_brown">갈색</string>
+  <string name="accent_cyan">청록색</string>
+  <string name="accent_demon">악마</string>
+  <string name="accent_denim">데님</string>
   <string name="accent_gold">골드</string>
+  <string name="accent_green">녹색 </string>
+  <string name="accent_grey">회색</string>
+  <string name="accent_orange">오렌지</string>
+  <string name="accent_oxygen">산소</string>
+  <string name="accent_pink">분홍색</string>
+  <string name="accent_purple">보라색</string>
+  <string name="accent_teal">청록</string>
+  <string name="accent_turquoise">터키석</string>
   <string name="accent_yellow">노랑색</string>
 </resources>

@@ -17,4 +17,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Accent colors -->
+  <string name="accent_amber">Bursztynowy</string>
+  <string name="accent_black">Czarny</string>
+  <string name="accent_brown">Brązowy</string>
+  <string name="accent_cyan">Turkusowy</string>
+  <string name="accent_demon">Czerwony</string>
+  <string name="accent_denim">Jeansowy</string>
+  <string name="accent_gold">Złoty</string>
+  <string name="accent_green">Zielony</string>
+  <string name="accent_grey">Szary</string>
+  <string name="accent_orange">Pomarańczowy</string>
+  <string name="accent_oxygen">Oxygen</string>
+  <string name="accent_pink">Różowy</string>
+  <string name="accent_purple">Fioletowy</string>
+  <string name="accent_teal">Morski</string>
+  <string name="accent_turquoise">Turkusowy</string>
+  <string name="accent_yellow">Żółty</string>
 </resources>
