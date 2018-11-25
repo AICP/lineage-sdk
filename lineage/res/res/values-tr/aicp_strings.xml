@@ -16,21 +16,21 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Accent colors -->
-  <string name="accent_amber">Koyu sarı</string>
-  <string name="accent_black">Siyah</string>
-  <string name="accent_brown">Kahverengi</string>
-  <string name="accent_cyan">Açık mavi</string>
-  <string name="accent_demon">Şeytan</string>
-  <string name="accent_denim">Denim</string>
-  <string name="accent_gold">Altın sarısı</string>
-  <string name="accent_green">Yeşil</string>
-  <string name="accent_grey">Gri</string>
-  <string name="accent_orange">Turuncu</string>
-  <string name="accent_oxygen">Oxygen</string>
-  <string name="accent_pink">Pembe</string>
-  <string name="accent_purple">Mor</string>
-  <string name="accent_teal">Deniz mavisi</string>
-  <string name="accent_turquoise">Turkuaz</string>
-  <string name="accent_yellow">Sarı</string>
+    <!-- Accent colors -->
+    <string name="accent_amber">Koyu sarı</string>
+    <string name="accent_black">Siyah</string>
+    <string name="accent_brown">Kahverengi</string>
+    <string name="accent_cyan">Açık mavi</string>
+    <string name="accent_demon">Şeytan</string>
+    <string name="accent_denim">Denim</string>
+    <string name="accent_gold">Altın sarısı</string>
+    <string name="accent_green">Yeşil</string>
+    <string name="accent_grey">Gri</string>
+    <string name="accent_orange">Turuncu</string>
+    <string name="accent_oxygen">Oxygen</string>
+    <string name="accent_pink">Pembe</string>
+    <string name="accent_purple">Mor</string>
+    <string name="accent_teal">Deniz mavisi</string>
+    <string name="accent_turquoise">Turkuaz</string>
+    <string name="accent_yellow">Sarı</string>
 </resources>

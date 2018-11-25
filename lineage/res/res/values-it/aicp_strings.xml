@@ -16,21 +16,21 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Accent colors -->
-  <string name="accent_amber">Ambra</string>
-  <string name="accent_black">Nero</string>
-  <string name="accent_brown">Marrone</string>
-  <string name="accent_cyan">Ciano</string>
-  <string name="accent_demon">Demone</string>
-  <string name="accent_denim">Denim</string>
-  <string name="accent_gold">Oro</string>
-  <string name="accent_green">Verde</string>
-  <string name="accent_grey">Grigio</string>
-  <string name="accent_orange">Arancione</string>
-  <string name="accent_oxygen">Oxygen</string>
-  <string name="accent_pink">Rosa</string>
-  <string name="accent_purple">Viola</string>
-  <string name="accent_teal">Verde acqua</string>
-  <string name="accent_turquoise">Turchese</string>
-  <string name="accent_yellow">Giallo</string>
+    <!-- Accent colors -->
+    <string name="accent_amber">Ambra</string>
+    <string name="accent_black">Nero</string>
+    <string name="accent_brown">Marrone</string>
+    <string name="accent_cyan">Ciano</string>
+    <string name="accent_demon">Demone</string>
+    <string name="accent_denim">Denim</string>
+    <string name="accent_gold">Oro</string>
+    <string name="accent_green">Verde</string>
+    <string name="accent_grey">Grigio</string>
+    <string name="accent_orange">Arancione</string>
+    <string name="accent_oxygen">Oxygen</string>
+    <string name="accent_pink">Rosa</string>
+    <string name="accent_purple">Viola</string>
+    <string name="accent_teal">Verde acqua</string>
+    <string name="accent_turquoise">Turchese</string>
+    <string name="accent_yellow">Giallo</string>
 </resources>

@@ -16,21 +16,21 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Accent colors -->
-  <string name="accent_amber">Bernstein</string>
-  <string name="accent_black">Schwarz</string>
-  <string name="accent_brown">Braun</string>
-  <string name="accent_cyan">Cyan</string>
-  <string name="accent_demon">Dämon</string>
-  <string name="accent_denim">Denim</string>
-  <string name="accent_gold">Gold</string>
-  <string name="accent_green">Grün</string>
-  <string name="accent_grey">Grau</string>
-  <string name="accent_orange">Orange</string>
-  <string name="accent_oxygen">Sauerstoff</string>
-  <string name="accent_pink">Pink</string>
-  <string name="accent_purple">Lila</string>
-  <string name="accent_teal">Blaugrün</string>
-  <string name="accent_turquoise">Türkis</string>
-  <string name="accent_yellow">Gelb</string>
+    <!-- Accent colors -->
+    <string name="accent_amber">Bernstein</string>
+    <string name="accent_black">Schwarz</string>
+    <string name="accent_brown">Braun</string>
+    <string name="accent_cyan">Cyan</string>
+    <string name="accent_demon">Dämon</string>
+    <string name="accent_denim">Denim</string>
+    <string name="accent_gold">Gold</string>
+    <string name="accent_green">Grün</string>
+    <string name="accent_grey">Grau</string>
+    <string name="accent_orange">Orange</string>
+    <string name="accent_oxygen">Sauerstoff</string>
+    <string name="accent_pink">Pink</string>
+    <string name="accent_purple">Lila</string>
+    <string name="accent_teal">Blaugrün</string>
+    <string name="accent_turquoise">Türkis</string>
+    <string name="accent_yellow">Gelb</string>
 </resources>

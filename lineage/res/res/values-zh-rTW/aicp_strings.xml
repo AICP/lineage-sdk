@@ -16,21 +16,21 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Accent colors -->
-  <string name="accent_amber">琥珀色</string>
-  <string name="accent_black">黑色</string>
-  <string name="accent_brown">棕色</string>
-  <string name="accent_cyan">青色</string>
-  <string name="accent_demon">小魔鬼</string>
-  <string name="accent_denim">牛仔色</string>
-  <string name="accent_gold">金色</string>
-  <string name="accent_green">綠色</string>
-  <string name="accent_grey">灰色</string>
-  <string name="accent_orange">橘黃色</string>
-  <string name="accent_oxygen">氧</string>
-  <string name="accent_pink">粉色</string>
-  <string name="accent_purple">紫色</string>
-  <string name="accent_teal">深青色</string>
-  <string name="accent_turquoise">青綠色</string>
-  <string name="accent_yellow">黃色</string>
+    <!-- Accent colors -->
+    <string name="accent_amber">琥珀色</string>
+    <string name="accent_black">黑色</string>
+    <string name="accent_brown">棕色</string>
+    <string name="accent_cyan">青色</string>
+    <string name="accent_demon">小魔鬼</string>
+    <string name="accent_denim">牛仔色</string>
+    <string name="accent_gold">金色</string>
+    <string name="accent_green">綠色</string>
+    <string name="accent_grey">灰色</string>
+    <string name="accent_orange">橘黃色</string>
+    <string name="accent_oxygen">氧</string>
+    <string name="accent_pink">粉色</string>
+    <string name="accent_purple">紫色</string>
+    <string name="accent_teal">深青色</string>
+    <string name="accent_turquoise">青綠色</string>
+    <string name="accent_yellow">黃色</string>
 </resources>

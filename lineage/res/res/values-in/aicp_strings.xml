@@ -16,21 +16,21 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Accent colors -->
-  <string name="accent_amber">Kuning kecoklatan</string>
-  <string name="accent_black">Hitam</string>
-  <string name="accent_brown">Coklat</string>
-  <string name="accent_cyan">Biru muda</string>
-  <string name="accent_demon">Merah</string>
-  <string name="accent_denim">Biru tua</string>
-  <string name="accent_gold">Emas</string>
-  <string name="accent_green">Hijau</string>
-  <string name="accent_grey">Abu-abu</string>
-  <string name="accent_orange">Oranye</string>
-  <string name="accent_oxygen">Oksigen</string>
-  <string name="accent_pink">Merah muda</string>
-  <string name="accent_purple">Ungu</string>
-  <string name="accent_teal">Hijau lumut</string>
-  <string name="accent_turquoise">Biru langit</string>
-  <string name="accent_yellow">Kuning</string>
+    <!-- Accent colors -->
+    <string name="accent_amber">Kuning kecoklatan</string>
+    <string name="accent_black">Hitam</string>
+    <string name="accent_brown">Coklat</string>
+    <string name="accent_cyan">Biru muda</string>
+    <string name="accent_demon">Merah</string>
+    <string name="accent_denim">Biru tua</string>
+    <string name="accent_gold">Emas</string>
+    <string name="accent_green">Hijau</string>
+    <string name="accent_grey">Abu-abu</string>
+    <string name="accent_orange">Oranye</string>
+    <string name="accent_oxygen">Oksigen</string>
+    <string name="accent_pink">Merah muda</string>
+    <string name="accent_purple">Ungu</string>
+    <string name="accent_teal">Hijau lumut</string>
+    <string name="accent_turquoise">Biru langit</string>
+    <string name="accent_yellow">Kuning</string>
 </resources>

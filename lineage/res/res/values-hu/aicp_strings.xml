@@ -16,21 +16,21 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Accent colors -->
-  <string name="accent_amber">Borostyán</string>
-  <string name="accent_black">Fekete</string>
-  <string name="accent_brown">Barna</string>
-  <string name="accent_cyan">Ciánkék</string>
-  <string name="accent_demon">Démon</string>
-  <string name="accent_denim">Farmerkék</string>
-  <string name="accent_gold">Arany</string>
-  <string name="accent_green">Zöld</string>
-  <string name="accent_grey">Szürke</string>
-  <string name="accent_orange">Narancs</string>
-  <string name="accent_oxygen">Oxygen</string>
-  <string name="accent_pink">Rózsaszín</string>
-  <string name="accent_purple">Lila</string>
-  <string name="accent_teal">Pávakék</string>
-  <string name="accent_turquoise">Türkiz</string>
-  <string name="accent_yellow">Sárga</string>
+    <!-- Accent colors -->
+    <string name="accent_amber">Borostyán</string>
+    <string name="accent_black">Fekete</string>
+    <string name="accent_brown">Barna</string>
+    <string name="accent_cyan">Ciánkék</string>
+    <string name="accent_demon">Démon</string>
+    <string name="accent_denim">Farmerkék</string>
+    <string name="accent_gold">Arany</string>
+    <string name="accent_green">Zöld</string>
+    <string name="accent_grey">Szürke</string>
+    <string name="accent_orange">Narancs</string>
+    <string name="accent_oxygen">Oxygen</string>
+    <string name="accent_pink">Rózsaszín</string>
+    <string name="accent_purple">Lila</string>
+    <string name="accent_teal">Pávakék</string>
+    <string name="accent_turquoise">Türkiz</string>
+    <string name="accent_yellow">Sárga</string>
 </resources>
